@@ -28,6 +28,3 @@ def download():
             return redirect(info['requested_formats'][0]['url'])
     except Exception as e:
         return 'エラーが発生しました。もう一度やり直してください。<br/>何度試してもエラーが発生する場合は、入力いただいたurlが正しいか確認してください。'
-
-if __name__ == '__main__':
-    app.run(debug=True)
