@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube動画ダウンローダー</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #FF0000;
+            font-size: 2.5em;
+        }
+
+        .download-form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-form input[type="url"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .download-form button {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .download-form button:hover {
+            background-color: #CC0000;
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .instructions {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .instructions p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube動画ダウンローダー</h1>
+        </header>
+
+        <div class="download-form">
+            <form action="/download" method="post">
+                <input type="url" name="yt_url" placeholder="YouTube動画のURLを貼り付けてください" required>
+                <button type="submit">ダウンロード開始</button>
+            </form>
+        </div>
+
+        <div class="instructions">
+            <h2>使い方</h2>
+            <p>1. 上の入力欄にダウンロードしたいYouTube動画のURLを貼り付けてください。</p>
+            <p>2. 「ダウンロード開始」ボタンをクリックしてください。</p>
+            <p>3. 動画が表示されるので、右クリック→名前を付けて保存にて保存をしてください。<br>&nbsp;&nbsp;&nbsp;&nbsp;iPhoneやandroidの場合は共有ボタン→写真に保存で保存できます。</p>
+        </div>
+
+        <div class="disclaimer">
+            <p>注意: 著作権で保護されたコンテンツのダウンロードは、個人的な使用のみを目的としてください。</p>
+            <p>商用利用や再配布は著作権法に違反する可能性があります。</p>
+        </div>
+    </div>
+</body>
+
+</html>
